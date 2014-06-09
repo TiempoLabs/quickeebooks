@@ -6,7 +6,9 @@ module Quickeebooks
         def status
           url = url_for_base("manage/entitlements")
           response = do_http_get(url)
-          puts response.body
+          
+          xml = parse_xml(response.body)
+          return Quickeebooks::Online::Model::Entitlements.new(xml)
         end
 
       end

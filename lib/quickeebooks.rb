@@ -123,6 +123,7 @@ require 'quickeebooks/online/model/bill_payment'
 require 'quickeebooks/online/model/bill_payment_header'
 require 'quickeebooks/online/model/bill_payment_line_item'
 require 'quickeebooks/online/model/tracking_class'
+require 'quickeebooks/online/model/entitlements'
 
 # Services
 require 'quickeebooks/online/service/filter'
