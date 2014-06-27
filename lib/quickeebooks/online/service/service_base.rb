@@ -3,13 +3,13 @@ require 'uri'
 require 'cgi'
 require 'quickeebooks/common/logging'
 
-class IntuitRequestException < Exception
+class IntuitRequestException < StandardError
   attr_accessor :code, :cause, :request
   def initialize(msg)
     super(msg)
   end
 end
-class AuthorizationFailure < Exception; end
+class AuthorizationFailure < StandardError; end
 
 module Quickeebooks
   module Online
