@@ -9,7 +9,7 @@ class IntuitRequestException < Exception
     super(msg)
   end
 end
-class AuthorizationFailure < StandardError; end
+class AuthorizationFailure < Exception; end
 
 module Quickeebooks
   module Online
