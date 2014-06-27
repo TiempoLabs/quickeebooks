@@ -3,7 +3,7 @@ require 'uri'
 require 'cgi'
 require 'quickeebooks/common/logging'
 
-class IntuitRequestException < StandardError
+class IntuitRequestException < Exception
   attr_accessor :code, :cause, :request
   def initialize(msg)
     super(msg)
